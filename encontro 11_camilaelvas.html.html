@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercício Resolvido</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .cards-container {
+      overflow-x: auto;
+    }
+
+    .cards-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1rem;
+    }
+
+    .card-fixed {
+      flex: 0 0 auto;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MinhaMarca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="container mt-4">
+    <h2>Encontro 11</h2>
+    <p>Conteúdo principal</p>
+
+    <div class="row">
+      <!-- Coluna principal com cards -->
+      <div class="col-md-9">
+        <p>Conteúdo principal com grid responsivo.</p>
+
+        <!-- Cards sempre em linha horizontal -->
+        <div class="cards-container">
+          <div class="cards-row">
+            <!-- Card 1 -->
+            <div class="card card-fixed text-center">
+              <div class="card-body">
+                <h5 class="card-title">Serviço A</h5>
+                <p class="card-text">Descrição breve do conteúdo.</p>
+                <a href="#" class="btn btn-primary">SAIBA MAIS</a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-fixed text-center">
+              <div class="card-body">
+                <h5 class="card-title">Serviço B</h5>
+                <p class="card-text">Descrição breve do conteúdo.</p>
+                <a href="#" class="btn btn-primary">SAIBA MAIS</a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card card-fixed text-center">
+              <div class="card-body">
+                <h5 class="card-title">Serviço C</h5>
+                <p class="card-text">Descrição breve do conteúdo.</p>
+                <a href="#" class="btn btn-primary">SAIBA MAIS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-3 mt-3 mt-md-0">
+        <p>Sidebar com dicas.</p>
+      </div>
+    </div>
+
+    <!-- Formulário de Contato -->
+    <h4 class="mt-5">Contato</h4>
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Nome">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="3" placeholder="Mensagem"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-light text-center text-muted py-3 mt-5">
+    © 2025 Exercício Encontro 11
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
